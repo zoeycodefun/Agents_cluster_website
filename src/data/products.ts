@@ -1,10 +1,11 @@
 import { type Product, type Category } from "../types/interface";
+
 // types of products
 export const categories: Category[] = [
     { id: 'hedge_trade', name: 'Hedge Trade', slug: 'hedge_trade_interface'},
     { id: 'trade_signals', name: 'Trade Signals', slug: 'trade_signals_interface'},
 ]
-// products data
+// products data(‼️API)
 export const products: Product[] = [
     // hedge trade
     {
@@ -42,4 +43,18 @@ export const products: Product[] = [
     }
     // 
 ]
+// the tool function of getting products list by slugs(including error handling)
+export const getProductsByCategory = (categorySlug: string): Product[] => {
+    // check the input index
+    if (!categorySlug || typeof categorySlug !== 'string') {
+        console.warn('Invalid category slug provided to getProductsByCategory');
+        return []; // return empty array for invalid input and avoid runtime errors
+    }
+    // filter the products and return
+    return products.filter(product => product.category === categorySlug);
+};
+// the tool function of getting all categories
+export const getAllCategories = (): Category[] => {
+    return [...categories] // return a copy of the categories array to prevent external mutations
+}
 
