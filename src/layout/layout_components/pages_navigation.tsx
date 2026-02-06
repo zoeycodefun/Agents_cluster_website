@@ -13,6 +13,12 @@ const PageNavigation: React.FC<NavigationProps> = ({ className = ''}) => {
     const location = useLocation();
     const handleNavigationClick = (category: Category) => {
         // ‼️ 点击分析，预加载
+        console.log(`Navigating to ${category.name}`);
+    };
+    return (
+        <nav className=''>
+
+        </nav>
         
-    }
+    )
 }
