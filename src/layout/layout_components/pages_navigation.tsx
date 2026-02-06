@@ -22,3 +22,4 @@ const PageNavigation: React.FC<NavigationProps> = ({ className = ''}) => {
         
     )
 }
+export default PageNavigation;
