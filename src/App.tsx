@@ -9,12 +9,12 @@ import TradeSignals from './pages/trade_signals'
 
 // define the config of pages:routers for pages and components
 const pageRouters = {
-  'hedge_trade' : HedgeTrade,
-  'trade_signals' : TradeSignals
+  'hedge_trade_interface' : HedgeTrade,
+  'trade_signals_interface' : TradeSignals
 } as const;
 
 // type security:get the type of page keys from the pageRouters object, which ensures that only valid page keys can be used in the app and prevents runtime errors due to typos or invalid keys
-type PageKey = keyof typeof pageRouters;
+type RouteKey = keyof typeof pageRouters;
 
 const App: React.FC = () => {
   return (
@@ -24,11 +24,20 @@ const App: React.FC = () => {
           <Route index element={<Home />} />
 
           {/* dynamically generate routes for pages based on the pageRouters config, which allows for easy addition of new pages by simply updating the pageRouters object without needing to modify the routing logic */}
-          
+          {(Object.keys(pageRouters) as RouteKey[]).map(routeKey => {
+            const Component = pageRouters[routeKey];
+            return (
+              <Route
+              key={routeKey}
+              path={routeKey}
+              element={<Component />}
+              />
+            );
+          })}
         </Route>
       </Routes>
     </Router>
-  )
-}
+  );
+};
 
 export default App

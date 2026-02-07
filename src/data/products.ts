@@ -42,6 +42,7 @@ export const products: Product[] = [
         category: 'hedge_trade'
     }
     // trade signals
+    
 ]
 // the tool function of getting products list by slugs(including error handling)
 export const getProductsByCategory = (categorySlug: string): Product[] => {
