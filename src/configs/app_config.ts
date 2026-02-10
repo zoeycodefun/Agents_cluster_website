@@ -90,5 +90,5 @@ export const categories: Category[] = [
 
 // helper function
 export const getCategoryByPath = (path: string): Category | undefined => {
-    return cateogories.find(category => category.path === path);
+    return categories.find(category => category.path === path);
 }
