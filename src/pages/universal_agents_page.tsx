@@ -55,13 +55,29 @@ const AgentsPage: React.FC<AgentsPageProps> = ({ category}) => {
                                 </div>
                             )}
                             {/** agent button to it website */}
-                            
-
+                            {agent.websiteUrl && (
+                                <a 
+                                href= {agent.websiteUrl}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className=''
+                                >
+                                    Visit Agent Website
+                                </a>
+                            )}
                         </div>
                     ))}
-
                 </div>
+                {agents.length === 0 && (
+                    <div className=''>
+                        <p className=''>
+                            No agents available in this category.
+                            Please check back later for updates!
+                        </p>
+                    </div>
+                )}
             </div>
         </div>
-    )
-}
+    );
+};
+export default AgentsPage;
