@@ -68,6 +68,7 @@ export const categories: Category[] = [
         ]
     },
     // market analysis
+
     {
         id: 'market_analysis',
         label: 'Market Analysis Agents',
@@ -85,7 +86,8 @@ export const categories: Category[] = [
             }
 
         ]
-    }
+    },
+    
 ];
 
 // helper function
