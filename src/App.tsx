@@ -1,21 +1,30 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-
-import HedgeTradeAgentsPage from './pages/hedge_trade_agents_page'
-import MarketAnalysisAgentsPage from './pages/market_analysis_agents_page'
-
-// define type of route config
-interface RouteConfig {
-  path: string;
-  element: React.ReactElement;
-  label: string; // label for navigation
-}
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./layout/layout";
+import UniversalAgentsPage from "./pages/universal_agents_page";
+import { categories } from "./configs/app_config";
 
 function App(): React.ReactElement {
   return (
-    
+    <div className="">
+      <Router>
+        <Routes>
+          <Route
+          path="/"
+          element={<Layout />}
+          >
+            <Route index element={<UniversalAgentsPage category={categories[0]}/>} />
+            {categories.map((category) => (
+              <Route
+              key={category.id}
+              path={category.path.replace('/','')}
+              element={<UniversalAgentsPage category={category} />}
+              />
+            ))}
+          </Route>
+        </Routes>
+      </Router>
+    </div>
   )
 }
-
-export default App
+export default App;

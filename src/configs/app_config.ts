@@ -18,7 +18,7 @@ export interface Category {
     agents: Agent[];
 }
 // navigation and agents data
-export const cateogories: Category[] = [
+export const categories: Category[] = [
     // hedge trade
     {
         id: 'hedge_trade',
