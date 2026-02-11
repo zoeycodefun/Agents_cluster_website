@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./layout/layout";
 import UniversalAgentsPage from "./pages/universal_agents_page";
 import { categories } from "./configs/app_config";
@@ -13,7 +13,7 @@ function App(): React.ReactElement {
           path="/"
           element={<Layout />}
           >
-            <Route index element={<UniversalAgentsPage category={categories[0]}/>} />
+            <Route index element={<Navigate to={categories[0].path} replace />} />
             {categories.map((category) => (
               <Route
               key={category.id}
