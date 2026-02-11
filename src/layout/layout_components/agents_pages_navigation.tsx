@@ -60,11 +60,10 @@ const AgentsPagesNavigation: React.FC = () => {
         {isMobileMenuOpen && (
             <div className='fixed inset-0 z-50 md:hidden'>
                 {/** background */}
-                <div className='absolute inset-0 bg-black/50 backdrop-blur-sm'
-                onClick={() => setIsMobileMenuOpen(false)}
-                />
+                <div className='absolute inset-0 bg-black/50 backdrop-blur-sm z-10'
+                onClick={() => setIsMobileMenuOpen(false)}></div>
                 {/** mobile menu window */}
-                <div className='relative flex items-center justify-center min-h-full p-4 '>
+                <div className='relative flex items-center justify-center min-h-full p-4 z-20 '>
                     <div className='bg-white rounded-lg max-w-sm w-full max-h-[80vh] overflow-y-auto'>
                         <div className='p-6'>
                             <p className='text-lg font-semibold text-gray-900 mb-4'>
