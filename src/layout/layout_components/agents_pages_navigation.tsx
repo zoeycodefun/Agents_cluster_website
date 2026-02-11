@@ -20,7 +20,7 @@ const AgentsPagesNavigation: React.FC = () => {
                 </div>
 
                 {/** navigation links */}
-                <div className='px-4 py-1 flex space-x-4 w-[140vh] overflow-x-auto whitespace-nowrap scrollbar-hide'>
+                <div className='px-4 py-1 flex space-x-4 overflow-x-auto whitespace-nowrap scrollbar-hide'>
                     {categories.map((category) => (
                         <NavLink
                         key={category.id}
@@ -63,8 +63,10 @@ const AgentsPagesNavigation: React.FC = () => {
                 <div className='absolute inset-0 bg-black/50 backdrop-blur-sm z-10'
                 onClick={() => setIsMobileMenuOpen(false)}></div>
                 {/** mobile menu window */}
-                <div className='relative flex items-center justify-center min-h-full p-4 z-20 '>
-                    <div className='bg-white rounded-lg max-w-sm w-full max-h-[80vh] overflow-y-auto'>
+                <div className='relative flex items-center justify-center min-h-full p-4 z-20'>
+                    <div className='bg-white rounded-lg max-w-sm w-full max-h-[80vh] overflow-y-auto'
+                    onClick={(event) => event.stopPropagation()}
+                    >
                         <div className='p-6'>
                             <p className='text-lg font-semibold text-gray-900 mb-4'>
                                 Select a Category
