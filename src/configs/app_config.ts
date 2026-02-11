@@ -5,6 +5,7 @@ export interface Agent {
     name: string;
     description: string;
     category: string;
+    githubUrl?: string,
     websiteUrl?: string;
     imageUrl?: string;
     status?: 'active' | 'upcoming';
@@ -30,6 +31,7 @@ export const categories: Category[] = [
                 name: 'BTC-ETH Correlation Monitor Agent',
                 description: 'Monitor the correlation between BTC and ETH, and provide insights for hedge trading strategies.',
                 category: 'hedge_trade',
+                githubUrl: '',
                 websiteUrl: '',
                 imageUrl: '',
                 status: 'active',
@@ -40,6 +42,7 @@ export const categories: Category[] = [
                 name: 'BTC-ETH Dual Asset Hedge Position Calculator Agent',
                 description: 'Calculate optimal hedge positions for BTC and ETH based on market conditions and user risk preferences.',
                 category: 'hedge_trade',
+                githubUrl: '',
                 websiteUrl: '',
                 imageUrl: '',
                 status: 'active',
@@ -50,6 +53,7 @@ export const categories: Category[] = [
                 name: 'Hedged Position Management Agent',
                 description: 'Manage and adjust hedged positions in real-time to maintain optimal risk exposure.',
                 category: 'hedge_trade',
+                githubUrl: '',
                 websiteUrl: '',
                 imageUrl: '',
                 status: 'active',
@@ -60,6 +64,7 @@ export const categories: Category[] = [
                 name: 'Night Sleep Session Market Watcher Agent',
                 description: 'Monitor the market during night sleep sessions and provide alerts for significant price movements or opportunities.',
                 category: 'hedge_trade',
+                githubUrl: '',
                 websiteUrl: '',
                 imageUrl: '',
                 status: 'active',
@@ -79,6 +84,7 @@ export const categories: Category[] = [
                 name: 'Crypto Whale Tracking Agent',
                 description: 'Track the activities of crypto whales and provide insights on potential market movements.',
                 category: 'market_analysis',
+                githubUrl: '',
                 websiteUrl: '',
                 imageUrl: '',
                 status: 'upcoming',
