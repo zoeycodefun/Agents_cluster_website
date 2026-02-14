@@ -493,12 +493,153 @@ export const categories: Category[] = [
             status: 'upcoming',
             tags: ['risk management', 'holder classification', 'market sentiment'],
         },
-        
+        {
+            id: 'liquidation_price_monitor_agent',
+            name: 'Liquidation Price Monitor Agent',
+            description: 'Monitor the liquidation prices of open positions to provide insights on potential risks and help traders manage their positions effectively.',
+            category: 'risk_management',
+            githubUrl: 'https://github.com/zoeycodefun/Liquidation_price_monitor_agent',
+            websiteUrl: 'https://agents-cluster-website.vercel.app',
+            imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+            status: 'upcoming',
+            tags: ['risk management', 'liquidation price monitoring', 'position management'],
+        },
+        {
+            id: 'smart_contract_security_scanner_agent',
+            name: 'Smart Contract Security Scanner Agent',
+            description: 'Scan smart contracts for potential security vulnerabilities to help users avoid risks associated with interacting with insecure contracts.',
+            category: 'risk_management',
+            githubUrl: 'https://github.com/zoeycodefun/Smart_contract_security_scanner_agent',
+            websiteUrl: 'https://agents-cluster-website.vercel.app',
+            imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+            status: 'upcoming',
+            tags: ['risk management', 'smart contract security', 'vulnerability scanning'],
+        }
     ]
-    }
+    },
     // AI_prediction_models_agents
+    {
+        id: 'AI_prediction_models_agents',
+        label: 'AI Prediction Models Agents',
+        path: '/AI_prediction_models_agents',
+        agents: [
+            {
+                id: 'ARIMA_volatility_prediction_agent',
+                name: 'ARIMA Volatility Prediction Agent',
+                description: 'Predict volatility using ARIMA models to provide insights on market trends and potential risks.',
+                category: 'AI_prediction_models_agents',
+                githubUrl: 'https://github.com/zoeycodefun/ARIMA_volatility_prediction_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['AI prediction', 'volatility prediction', 'ARIMA'],
+            },
+            {
+                id: 'LSTM_price_prediction_agent',
+                name: 'LSTM Price Prediction Agent',
+                description: 'Predict asset prices using LSTM models to provide insights on market trends and potential trading opportunities.',
+                category: 'AI_prediction_models_agents',
+                githubUrl: 'https://github.com/zoeycodefun/LSTM_price_prediction_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['AI prediction', 'price prediction', 'LSTM'],
+            },
+            {
+                id: 'prophet_cycle_recognition_agent',
+                name: 'Prophet Cycle Recognition Agent',
+                description: 'Recognize market cycles using Prophet models to provide insights on market trends and potential trading opportunities.',
+                category: 'AI_prediction_models_agents',
+                githubUrl: 'https://github.com/zoeycodefun/Prophet_cycle_recognition_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['AI prediction', 'cycle recognition', 'Prophet'],
+            },
+            {
+                id: 'transformer_multivariate_prediction_agent',
+                name: 'Transformer Multivariate Prediction Agent',
+                description: 'Predict multiple market variables using transformer models to provide comprehensive insights on market trends and potential trading opportunities.',
+                category: 'AI_prediction_models_agents',
+                githubUrl: 'https://github.com/zoeycodefun/Transformer_multivariate_prediction_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['AI prediction', 'multivariate prediction', 'transformer'],
+            },
+            {
+                id: 'volume_prediction_agent',
+                name: 'Volume Prediction Agent',
+                description: 'Predict trading volume using machine learning models to provide insights on market activity and potential trading opportunities.',
+                category: 'AI_prediction_models_agents',
+                githubUrl: 'https://github.com/zoeycodefun/Volume_prediction_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['AI prediction', 'volume prediction', 'machine learning'],
+            }
+        ]
+    },
+
     // entity_recognition
+    {
+        id: 'entity_recognition',
+        label: 'Entity Recognition Agents',
+        path: '/entity_recognition',
+        agents: [
+            {
+                id: 'investment_institution_entity_recognition_agent',
+                name: 'Investment Institution Entity Recognition Agent',
+                description: 'Recognize and classify investment institutions from various data sources to provide insights on market trends and potential trading opportunities.',
+                category: 'entity_recognition',
+                githubUrl: 'https://github.com/zoeycodefun/Investment_institution_entity_recognition_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['entity recognition', 'investment institutions', 'market insights'],
+            },
+            {
+                id: 'meme_hotspot_entiry_recognition_agent',
+                name: 'Meme Hotspot Entity Recognition Agent',
+                description: 'Recognize and classify meme hotspots from social media and other data sources to provide insights on market sentiment and potential trading opportunities.',
+                category: 'entity_recognition',
+                githubUrl: 'meme_hotspot_entiry_recognition_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['entity recognition', 'meme hotspots', 'market sentiment'],
+            },
+            {
+                id: 'project_entity_recognition_agent',
+                name: 'Project Entity Recognition Agent',
+                description: 'Recognize and classify projects from various data sources to provide insights on market trends and potential trading opportunities.',
+                category: 'entity_recognition',
+                githubUrl: 'https://github.com/zoeycodefun/Project_entity_recognition_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['entity recognition', 'projects', 'market insights'],
+            },
+            {
+                id: 'token_symbol_extraction_agent',
+                name: 'Token Symbol Extraction Agent',
+                description: 'Extract and classify token symbols from various data sources to provide insights on market trends and potential trading opportunities.',
+                category: 'entity_recognition',
+                githubUrl: 'https://github.com/zoeycodefun/Token_symbol_extraction_agent',
+                websiteUrl: 'https://agents-cluster-website.vercel.app',
+                imageUrl: 'https://images.pexels.com/photos/16027815/pexels-photo-16027815.jpeg',
+                status: 'upcoming',
+                tags: ['entity recognition', 'token symbols', 'market insights'],
+            },
+        ]
+    },
     // blockchain
+    {
+        id: 'blockchain',
+        label: 'Blockchain Agents',
+        path: '/blockchain',
+        agents: []
+    }
 
     
 
