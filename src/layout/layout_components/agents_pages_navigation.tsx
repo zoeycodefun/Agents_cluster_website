@@ -14,7 +14,7 @@ const AgentsPagesNavigation: React.FC = () => {
                 <div className='flex items-center'>
                 {/** title */}
                 <div className='flex-shrink-0'>
-                    <span className='text-lg font-bold text-gray-900'>
+                    <span className='text-lg font-bold text-gray-900 pr-4'>
                     Agents Cluster
                     </span>
                 </div>
